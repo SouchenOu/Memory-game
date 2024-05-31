@@ -1,0 +1,25 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #9c9292;
+}
+
+.game-container {
+   position : relative;
+   display: flex;
+   justify-content : center;
+   align-items:  center;
+   flex-direction:   column;
+   gap: 30px;
+   background-color: blue;
+   padding: 40px 60px;
+}
+
