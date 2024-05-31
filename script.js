@@ -21,7 +21,6 @@ const images = [
 const sortedImages = images.sort(() => (Math.random() > 0.5) ? 1 : -1);
 ////gameBoard: A reference to the game board element in the HTML where the cards will be appended.
 const gameBoard = document.querySelector('.game-board');
-const scoreDisplay = document.querySelector('.score');
 
 
 // Iterates over each images to create a card.
@@ -34,25 +33,25 @@ sortedImages.forEach(image => {
     box.innerHTML = `<img src="${image}" alt="memory image">`;
     //Adds a click event listener to each card.
     box.addEventListener('click', function() {
-        //Prevents action if the board is locked or if the same card is clicked twice.
-          //lockBoard: A boolean variable indicating whether the game board is currently "locked" to prevent further clicks while processing.
-        //this === firstCard: Checks if the clicked card is the same as the first card selected. If either condition is true, the function returns immediately, preventing further actions.
-        if (lockBoard || this === firstCard || this.classList.contains('boxMatch')) 
-            return;
+    //Prevents action if the board is locked or if the same card is clicked twice.
+    //lockBoard: A boolean variable indicating whether the game board is currently "locked" to prevent further clicks while processing.
+    //this === firstCard: Checks if the clicked card is the same as the first card selected. If either condition is true, the function returns immediately, preventing further actions.
+    if (lockBoard || this === firstCard || this.classList.contains('boxMatch')) 
+        return;
 
-          //Adds the boxOpen class to the clicked card
-        this.classList.add('boxOpen');
+    //Adds the boxOpen class to the clicked card
+    this.classList.add('boxOpen');
 
-        //If no card has been selected (firstCard is null), the clicked card is set as firstCard.
-        if (!firstCard) {
-            firstCard = this;
-            return;
-        }
-        /**If a card has already been selected (firstCard is not null), the clicked card is set as secondCard and the board is locked (lockBoard is set to true). */
-        secondCard = this;
-        lockBoard = true;
-        //Calls the checkForMatch function to see if the two selected cards match.
-        CheckIfItMatch();
+    //If no card has been selected (firstCard is null), the clicked card is set as firstCard.
+    if (!firstCard) {
+        firstCard = this;
+        return;
+    }
+    /**If a card has already been selected (firstCard is not null), the clicked card is set as secondCard and the board is locked (lockBoard is set to true). */
+    secondCard = this;
+    lockBoard = true;
+    //Calls the checkForMatch function to see if the two selected cards match.
+    CheckIfItMatch();
     });
     
     gameBoard.appendChild(box);
