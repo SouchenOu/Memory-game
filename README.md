@@ -43,6 +43,20 @@ A click event listener is added to each card to handle the game's logic:
 
 *Style the game using CSS to make it visually appealing.
 
+![Screenshot from 2024-05-31 08-55-18](https://github.com/SouchenOu/Memory-game/assets/87101785/8d556d9a-5774-4a4f-97ff-12331ede6cd2)
+
+![Screenshot from 2024-05-31 08-55-25](https://github.com/SouchenOu/Memory-game/assets/87101785/89ab0443-90ec-4c1f-ad33-7e8ba0b6099a)
+
+
+![Screenshot from 2024-05-31 08-55-50](https://github.com/SouchenOu/Memory-game/assets/87101785/d433337e-3086-4769-a684-4746529af2e9)
+
+
+
+
+
+
+
+
 *Make sure the game is responsive and works well on different screen sizes.
 
 *Write concise and well-structured code with appropriate comments.
