@@ -1,7 +1,7 @@
 # Avito-challenge
 
 
-The code iterates over each image in the sorted images array, creating a card for each image.
+---> The code iterates over each image in the sorted images array, creating a card for each image.
 Each card is a div element containing an img element.
 
 A click event listener is added to each card to handle the game's logic:
@@ -43,6 +43,14 @@ A click event listener is added to each card to handle the game's logic:
 
 *Style the game using CSS to make it visually appealing.
 
+*Make sure the game is responsive and works well on different screen sizes.
+
+*Write concise and well-structured code with appropriate comments.
+
+
+
+
+
 ![Screenshot from 2024-05-31 08-55-18](https://github.com/SouchenOu/Memory-game/assets/87101785/8d556d9a-5774-4a4f-97ff-12331ede6cd2)
 
 ![Screenshot from 2024-05-31 08-55-25](https://github.com/SouchenOu/Memory-game/assets/87101785/89ab0443-90ec-4c1f-ad33-7e8ba0b6099a)
@@ -56,7 +64,3 @@ A click event listener is added to each card to handle the game's logic:
 
 
 
-
-*Make sure the game is responsive and works well on different screen sizes.
-
-*Write concise and well-structured code with appropriate comments.
